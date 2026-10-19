@@ -1,0 +1,94 @@
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  margin-top: 56px;
+  padding: 24px 0;
+  border-top: 1px solid rgb(206 206 251 / 16%);
+  color: #a8b5db;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-icon-link {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgb(206 206 251 / 20%);
+  border-radius: 12px;
+  background: rgb(15 13 35 / 75%);
+  color: #a8b5db;
+  cursor: pointer;
+  transition:
+    color 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease,
+    transform 150ms ease;
+}
+
+.footer-icon-link svg {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: #ab8bff;
+  background: rgb(171 139 255 / 12%);
+  color: white;
+}
+
+.footer-icon-link:focus-visible {
+  outline: 2px solid #ab8bff;
+  outline-offset: 4px;
+}
+
+.footer-about {
+  flex-basis: 100%;
+  padding: 16px;
+  border: 1px solid rgb(206 206 251 / 16%);
+  border-radius: 12px;
+  background: rgb(15 13 35 / 75%);
+  text-align: center;
+}
+
+.footer-about-github {
+  margin: 12px auto 0;
+}
+
+.footer-about h2 {
+  margin: 0 0 6px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-about p {
+  margin: 0;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-actions {
+    justify-content: center;
+  }
+}

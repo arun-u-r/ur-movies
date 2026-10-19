@@ -1,0 +1,63 @@
+.navbar {
+  position: sticky;
+  top: 12px;
+  z-index: 30;
+  align-self: flex-end;
+  width: max-content;
+}
+
+.navbar-toggle {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgb(206 206 251 / 25%);
+  border-radius: 14px;
+  background: rgb(15 13 35 / 90%);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 25%);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus-visible {
+  border-color: #ab8bff;
+  outline: none;
+}
+
+.navbar-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  display: grid;
+  min-width: 190px;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid rgb(206 206 251 / 20%);
+  border-radius: 14px;
+  background: rgb(15 13 35 / 96%);
+  box-shadow: 0 14px 34px rgb(0 0 0 / 40%);
+  backdrop-filter: blur(14px);
+}
+
+.navbar-menu a {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #cecefb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a:focus-visible {
+  background: rgb(171 139 255 / 16%);
+  color: white;
+  outline: none;
+}
