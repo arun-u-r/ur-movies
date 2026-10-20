@@ -5,7 +5,7 @@ const Footer = () => {
   const [showAbout, setShowAbout] = useState(false);
 
   return (
-    <footer className="site-footer">
+    <footer className="site-footer" >
       <div className="footer-actions" aria-label="Developer links">
         
         <button
@@ -57,7 +57,7 @@ const Footer = () => {
           </a>
         </section>
       )}
-      <p className="footer-copyright">
+      <p id="site-footer" className="footer-copyright" >
         &copy; {new Date().getFullYear()} Arun.U.R. All rights reserved.
       </p>
     </footer>

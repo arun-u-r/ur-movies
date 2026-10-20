@@ -200,10 +200,10 @@ const App = () => {
             {!selectedMovie && (
               <a
                 className="fixed-site-logo"
-                href="#page-top"
+                href="#site-footer"
                 aria-label="Movie app home"
               >
-                <img src="/logo.png" alt="" />
+                <img src="/logo.png" alt="ur-movies" />
               </a>
             )}
             <Navbar />
